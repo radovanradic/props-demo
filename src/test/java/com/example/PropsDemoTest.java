@@ -21,6 +21,12 @@ class PropsDemoTest {
     void testItWorks() {
         Assertions.assertTrue(application.isRunning());
         Assertions.assertNotNull(configuration);
+        Assertions.assertEquals("101", configuration.getId());
+        Assertions.assertEquals(2, configuration.getCustomConfigs().size());
+        Assertions.assertEquals("apple", configuration.getCustomConfigs().get(0).getName());
+        Assertions.assertEquals(Double.valueOf(20), configuration.getCustomConfigs().get(0).getPrice());
+        Assertions.assertEquals("pear", configuration.getCustomConfigs().get(1).getName());
+        Assertions.assertEquals(Double.valueOf(25), configuration.getCustomConfigs().get(1).getPrice());
     }
 
 }
