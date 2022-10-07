@@ -1,0 +1,15 @@
+micronaut:
+  application:
+    name: propsDemo
+netty:
+  default:
+    allocator:
+      max-order: 3
+my:
+  config:
+    id: 101
+    custom-configs:
+      - name: apple
+        price: 20
+      - name: pear
+        price: 25
