@@ -13,3 +13,9 @@ my:
         price: 20
       - name: pear
         price: 25
+
+registration:
+  - name: "<svc>"
+    admin-url: "<url>"
+  - name: "<svc1>"
+    admin-url: "<url1>"
